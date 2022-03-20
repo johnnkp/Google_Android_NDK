@@ -222,6 +222,7 @@ int renameat2(int __old_dir_fd, const char* __old_path, int __new_dir_fd, const 
 
 int fseek(FILE* __fp, long __offset, int __whence);
 long ftell(FILE* __fp);
+off_t ftello(FILE* __fp);
 
 /* See https://android.googlesource.com/platform/bionic/+/master/docs/32-bit-abi.md */
 #if defined(__USE_FILE_OFFSET64)
