@@ -184,6 +184,7 @@ typedef basic_fstream<wchar_t> wfstream;
 #include <istream>
 #include <__locale>
 #include <cstdio>
+#include <stdio.h>
 #include <cstdlib>
 #include <filesystem>
 
