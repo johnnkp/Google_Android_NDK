@@ -55,6 +55,8 @@ struct dl_phdr_info {
   void* dlpi_tls_data;
 };
 
+int dl_iterate_phdr(int (*__callback)(struct dl_phdr_info*, size_t, void*), void* __data);
+
 #if defined(__arm__)
 
 #if __ANDROID_API__ >= 21
